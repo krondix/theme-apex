@@ -1,2 +1,17 @@
 /node_modules/
 .DS_Store
+.idea/.name
+
+.idea/encodings.xml
+
+.idea/misc.xml
+
+.idea/modules.xml
+
+.idea/scopes/scope_settings.xml
+
+.idea/theme-apex.iml
+
+.idea/vcs.xml
+
+.idea/workspace.xml
