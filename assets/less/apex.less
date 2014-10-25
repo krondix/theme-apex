@@ -70,6 +70,30 @@ a {
     }
 }
 
+ul.social {
+    display: inline-block;
+    margin: 0 auto;
+    z-index: 1000;
+    li {
+        list-style-type: none;
+        display: inline-block;
+        a {
+            display: inline-block;
+            width: 25px;
+            height: 21px;
+            .rounded(50%);
+            background-color: @white;
+            color: @black;
+            text-align: center;
+            padding-top: 4px;
+            &:hover {
+                background-color: @link;
+            }
+            margin: 0 5px 0 5px;
+        }
+    }
+}
+
 div.header {
     position: fixed;
     top: 0;
