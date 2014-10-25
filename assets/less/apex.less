@@ -70,30 +70,7 @@ a {
     }
 }
 
-ul.social {
-    display: inline-block;
-    margin: 0 auto;
-    z-index: 1000;
-    li {
-        list-style-type: none;
-        display: inline-block;
-        a {
-            display: inline-block;
-            width: 25px;
-            height: 21px;
-            .rounded(50%);
-            background-color: @white;
-            color: @black;
-            text-align: center;
-            padding-top: 4px;
-            &:hover {
-                background-color: @link;
-            }
-            margin: 0 5px 0 5px;
-        }
-    }
-    padding-top: 10px;
-}
+
 
 div.header {
     position: fixed;
@@ -199,63 +176,11 @@ div.header {
             }
         }
     }
-    a.logo {
-        display: block;
-        position: relative;
-        width: 85px;
-        height: 85px;
-        border: 10px solid @white;
-        background-color: @black;
-        margin: 0 auto;
-        margin-top: 80px;
-        text-align: center;
-        .rounded(50%);
-        &:hover {
-            background-color: @link;
-        }
-        img {
-            .rounded(50%);
-        }
-        i {
-            position: relative;
-            display: block;
-            color: @white;
-            font-size: 40px;
-            line-height: 40px;
-            top: 50%;
-            margin-top: -20px;
-        }
-    }
+
     .clearfix();
 }
 
-a.logo {
-    display: block;
-    position: relative;
-    width: 85px;
-    height: 85px;
-    border: 10px solid @white;
-    background-color: @black;
-    margin: 0 auto;
-    margin-top: 80px;
-    text-align: center;
-    .rounded(50%);
-    &:hover {
-        background-color: @link;
-    }
-    img {
-        .rounded(50%);
-    }
-    i {
-        position: relative;
-        display: block;
-        color: @white;
-        font-size: 40px;
-        line-height: 40px;
-        top: 50%;
-        margin-top: -20px;
-    }
-}
+
 
 div.posts {
     padding-top: 95px;
@@ -638,8 +563,60 @@ div.footer {
     background-color: #eee;
 }
 
-.real-header.p {
+.title.lead {
     padding-top:10px;
+}
+
+ul.social {
+    display: inline-block;
+    margin: 0 auto;
+    z-index: 1000;
+    li {
+        list-style-type: none;
+        display: inline-block;
+        a {
+            display: inline-block;
+            width: 25px;
+            height: 21px;
+            .rounded(50%);
+            background-color: @white;
+            color: @black;
+            text-align: center;
+            padding-top: 4px;
+            &:hover {
+                background-color: @link;
+            }
+            margin: 0 5px 0 5px;
+        }
+    }
+    padding-top: 10px;
+}
+
+a.logo {
+    display: block;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    border: 10px solid @white;
+    background-color: @black;
+    margin: 0 auto;
+    text-align: center;
+    .rounded(50%);
+    &:hover {
+        background-color: @link;
+    }
+    img {
+        .rounded(50%);
+    }
+    i {
+        position: relative;
+        display: block;
+        color: @white;
+        font-size: 40px;
+        line-height: 40px;
+        top: 50%;
+        margin-top: -20px;
+    }
 }
 
 @import url(http://postach.io/static/themes/_assets/less/login.less);
