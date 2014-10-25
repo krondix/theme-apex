@@ -984,7 +984,7 @@ a.logo i {
   font-size: 16px;
 }
 .info-left {
-  width: 90%;
+  width: 100% !important;
 }
 .login {
   -ms-box-sizing: border-box;
