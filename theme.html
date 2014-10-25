@@ -60,7 +60,7 @@
     {% else  %}
 
     <div class="row real-header">
-        <div class="span2 offset2 text-center">
+        <div class="span2 offset1 text-center">
             <a class="logo" href="/">
                 <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
             </a>
@@ -141,7 +141,7 @@
 
       {% if is_home or is_tag %}
 
-      <div class="span10 offset2 posts">
+      <div class="span10 offset1 posts">
 
           {% if is_tag %}
           <h4 class="sub-heading span10">Showing all posts tagged {{ tag }}:</h4>
@@ -192,7 +192,7 @@
 
       {% elif post %}
 
-      <div class="span10 offset2 posts">
+      <div class="span10 offset1 posts">
         <div class="post whole span10">
           <h1>{{ post.title }}</h1>
           <div class="post-info">
