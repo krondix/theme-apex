@@ -5,7 +5,7 @@
     <title>
       {% if is_login %}Login
       {% elif is_home %}{{ site.author }}
-      {% elif is_tag %}{{ tag }}
+      {% elif is_tag %}Posts about {{ tag }}
       {% elif post %}{{ post.title }}
       {% endif %}
       | {{ site.name }}
