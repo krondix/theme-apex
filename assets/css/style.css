@@ -643,7 +643,7 @@ div.post div.post-info {
   display: block;
   clear: both;
   width: 100%;
-  padding: 0 0 20px 0;
+  padding: 0 0 0px 0;
 }
 div.post div.post-info:after {
   visibility: hidden;

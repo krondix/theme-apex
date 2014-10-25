@@ -172,14 +172,6 @@
             <div class="post-body" data-type-cleanup="true">
               {{ post.content }}
             </div>
-            <div class="post-info">
-              <div class="info-left">
-                <p class="date">{{ post.created_at|format_date }}</p>
-              </div>
-              <div class="info-right">
-                <p class="read-more"><a href="{{ post.permalink }}">Read More &raquo;</a></p>
-              </div>
-            </div>
           </div>
           {% endfor %}
           {% if not is_tag %}
@@ -195,7 +187,7 @@
 
       {% elif post %}
 
-      <div class="span10 offset1 posts">
+      <div class="span10 offset2 posts">
         <div class="post whole span10">
           <h1>{{ post.title }}</h1>
           <div class="post-info">
