@@ -987,6 +987,9 @@ a.logo i {
 .info-left {
   width: 100% !important;
 }
+ol.li {
+  list-style-type: decimal !important;
+}
 .login {
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
