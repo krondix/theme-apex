@@ -60,7 +60,7 @@
     {% else  %}
 
     <div class="row">
-        <div class="span12 header">
+        <div class="span12">
 
             <div class="title">
                 <h1>{{ site.name }}</h1>
@@ -103,9 +103,9 @@
                     </li>
                 </ul>
             </div>
-            <a class="logo" href="/">
-                <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
-            </a>
+            <!--<a class="logo" href="/">-->
+                <!--<img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />-->
+            <!--</a>-->
             <div class="site-description">
                 <ul>
                     <li><a href="/">Blog</a></li>
@@ -137,7 +137,7 @@
           {% for post in posts %}
           <div class="post span10">
             <div class="row">
-              <div class="span6">
+              <div class="span10">
                 <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
               </div>
             </div>
@@ -155,7 +155,7 @@
           </div>
           {% endfor %}
           {% if not is_tag %}
-          <div class="pagination span6">
+          <div class="pagination span10">
             {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
             {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
           </div>
