@@ -139,7 +139,7 @@
 
       {% if is_home or is_tag %}
 
-      <div class="span10 offset1 posts">
+      <div class="span9 offset1 posts">
 
           {% if is_tag %}
           <h4 class="sub-heading span9">Posts about {{ tag|format_tag(False, False) }}. <a href="/">Read all posts</a>.</h4>
@@ -190,7 +190,7 @@
 
       {% elif post %}
 
-      <div class="span10 offset1 posts">
+      <div class="span9 offset1 posts">
         <div class="post whole span9">
           <h1>{{ post.title }}</h1>
           <div class="post-info">
@@ -241,7 +241,7 @@
 
     {% elif post.type == 'page' %}
 
-      <div class="span10 offset1 posts">
+      <div class="span9 offset1 posts">
         <div class="post whole span9">
           <h1>{{ page.title }}</h1>
           <div class="post-body" data-type-cleanup="true">
