@@ -130,14 +130,14 @@
       <div class="span11 offset1 posts">
 
           {% if is_tag %}
-          <h4 class="sub-heading span6">Showing all posts tagged {{ tag }}:</h4>
+          <h4 class="sub-heading span11">Showing all posts tagged {{ tag }}:</h4>
           {% endif %}
 
           {% if posts %}
           {% for post in posts %}
-          <div class="post span10">
+          <div class="post span11">
             <div class="row">
-              <div class="span10">
+              <div class="span11">
                 <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
               </div>
             </div>
@@ -155,20 +155,20 @@
           </div>
           {% endfor %}
           {% if not is_tag %}
-          <div class="pagination span10">
+          <div class="pagination span11">
             {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
             {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
           </div>
           {% endif %}
           {% else %}
-          <h4 class="sub-heading span6">No Posts Yet :(</h4>
+          <h4 class="sub-heading span11">No Posts Yet :(</h4>
           {% endif %}
       </div>
 
       {% elif post %}
 
-      <div class="span6 offset1 posts">
-        <div class="post whole span6">
+      <div class="span11 offset1 posts">
+        <div class="post whole span11">
           <h1>{{ post.title }}</h1>
           <div class="post-info">
             <div class="info-left">
@@ -221,8 +221,8 @@
 
     {% elif post.type == 'page' %}
 
-      <div class="span6 offset1 posts">
-        <div class="post whole span6">
+      <div class="span11 offset1 posts">
+        <div class="post whole span11">
           <h1>{{ page.title }}</h1>
           <div class="post-body" data-type-cleanup="true">
             {{ page.content }}
