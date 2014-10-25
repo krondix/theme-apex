@@ -61,61 +61,65 @@
 
     <div class="row real-header">
         <div class="span9 offset1 ">
-            <div style="float: left">
-                <a class="logo" href="/">
-                    <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
-                </a>
+            <div class="row">
+                <div class="span2">
+                    <a class="logo" href="/">
+                        <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
+                    </a>
+                </div>
+                <div class="span8" >
+                    <h1>Egor Azanov <a href="egor@krondix.com">egor@krondix.com</a></h1>
+                    <p class="lead">Integral life hacker, spiritual seeker, futurist. <br/>
+                        CEO of <a href="http://what.ms">Whatmatters</a>, poker player and coach.</p>
+                    <ul class="social inline">
+                        {% if site.twitter %}
+                        <li>
+                            <a href="{{ site.twitter }}" title="Twitter" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+
+                        {% if site.facebook %}
+                        <li>
+                            <a href="{{ site.facebook }}" title="Facebook" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+
+                        {% if site.googleplus %}
+                        <li>
+                            <a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
+                                <i class="icon-google-plus"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+
+                        <li>
+                            <a href="http://instagram.com/krondix?rel=author" title="Instagram" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        {% if site.linkedin %}
+                        <li>
+                            <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        {% endif %}
+                        <li>
+                            <a href="{{ site.atom_url }}" title="RSS" target="_blank">
+                                <i class="fa fa-rss"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="title" style="float:left; margin-left:20px">
-                <h1>Egor Azanov <a href="egor@krondix.com">egor@krondix.com</a></h1>
-                <p class="lead">Integral life hacker, spiritual seeker, futurist. <br/>
-                    CEO of <a href="http://what.ms">Whatmatters</a>, poker player and coach.</p>
-                <ul class="social inline">
-                    {% if site.twitter %}
-                    <li>
-                        <a href="{{ site.twitter }}" title="Twitter" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    {% endif %}
 
-                    {% if site.facebook %}
-                    <li>
-                        <a href="{{ site.facebook }}" title="Facebook" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    {% endif %}
 
-                    {% if site.googleplus %}
-                    <li>
-                        <a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
-                            <i class="icon-google-plus"></i>
-                        </a>
-                    </li>
-                    {% endif %}
-
-                    <li>
-                        <a href="http://instagram.com/krondix?rel=author" title="Instagram" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
-
-                    {% if site.linkedin %}
-                    <li>
-                        <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    {% endif %}
-                    <li>
-                        <a href="{{ site.atom_url }}" title="RSS" target="_blank">
-                            <i class="fa fa-rss"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <!--<a class="logo" href="/">-->
                 <!--<img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />-->
             <!--</a>-->
