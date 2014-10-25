@@ -172,6 +172,11 @@
             <div class="post-body" data-type-cleanup="true">
               {{ post.content }}
             </div>
+              <div class="post-info">
+                  <div class="info-left">
+                      <p><a href="{{post.permalink}}">Please, leave a comment</a></p>
+                  </div>
+              </div>
           </div>
           {% endfor %}
           {% if not is_tag %}
