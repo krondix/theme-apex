@@ -142,7 +142,7 @@
       <div class="span10 offset1 posts">
 
           {% if is_tag %}
-          <h4 class="sub-heading span10">Showing all posts tagged {{ tag }}:</h4>
+          <h4 class="sub-heading span10">Posts about {{ tag|format_tag(False, False) }}</h4>
           {% endif %}
 
           {% if posts %}

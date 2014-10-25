@@ -717,7 +717,9 @@ div.post div.post-footer {
   padding-top: 20px;
 }
 .sub-heading {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .pagination {
   width: 100%;
