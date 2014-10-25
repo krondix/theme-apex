@@ -914,18 +914,20 @@ div.footer ul li.link-icon a {
   padding-bottom: 20px;
   background-color: #eee;
 }
-.title.lead {
-  padding-top: 10px;
+.lead {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 ul.social {
   display: inline-block;
   margin: 0 auto;
   z-index: 1000;
-  padding-top: 10px;
 }
 ul.social li {
   list-style-type: none;
   display: inline-block;
+  padding-left: 0px;
+  padding-right: 10px;
 }
 ul.social li a {
   display: inline-block;
