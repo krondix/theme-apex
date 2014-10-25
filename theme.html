@@ -64,56 +64,51 @@
             <a class="logo" href="/">
                 <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
             </a>
+            <ul class="social inline">
+                {% if site.twitter %}
+                <li>
+                    <a href="{{ site.twitter }}" title="Twitter" target="_blank">
+                        <i class="icon-twitter"></i>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.facebook %}
+                <li>
+                    <a href="{{ site.facebook }}" title="Facebook" target="_blank">
+                        <i class="icon-facebook-sign"></i>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.googleplus %}
+                <li>
+                    <a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
+                        <i class="icon-google-plus"></i>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.linkedin %}
+                <li>
+                    <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
+                        <i class="icon-linkedin"></i>
+                    </a>
+                </li>
+                {% endif %}
+                <li>
+                    <a href="{{ site.atom_url }}" title="RSS" target="_blank">
+                        <i class="icon-rss"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="span8 ">
 
             <div class="title">
-                <h1>Egor Azanov</h1>
+                <h1>Egor Azanov <a href="egor@krondix.com">egor@krondix.com</a></h1>
                 <p class="lead">Integral life hacker, spiritual seeker, futurist, CEO of Whatmatters, poker player.</p>
-                <ul class="social inline">
-                    <li>
-                        <a href="mailto:egor@krondix.com" title="Email">
-                            egor@krondix.com
-                        </a>
-                    </li>
 
-                    {% if site.twitter %}
-                    <li>
-                        <a href="{{ site.twitter }}" title="Twitter" target="_blank">
-                            <i class="icon-twitter"></i>
-                        </a>
-                    </li>
-                    {% endif %}
-
-                    {% if site.facebook %}
-                    <li>
-                        <a href="{{ site.facebook }}" title="Facebook" target="_blank">
-                            <i class="icon-facebook-sign"></i>
-                        </a>
-                    </li>
-                    {% endif %}
-
-                    {% if site.googleplus %}
-                    <li>
-                        <a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
-                            <i class="icon-google-plus"></i>
-                        </a>
-                    </li>
-                    {% endif %}
-
-                    {% if site.linkedin %}
-                    <li>
-                        <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
-                            <i class="icon-linkedin"></i>
-                        </a>
-                    </li>
-                    {% endif %}
-                    <li>
-                        <a href="{{ site.atom_url }}" title="RSS" target="_blank">
-                            <i class="icon-rss"></i>
-                        </a>
-                    </li>
-                </ul>
             </div>
             <!--<a class="logo" href="/">-->
                 <!--<img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />-->
