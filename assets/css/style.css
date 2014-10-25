@@ -247,6 +247,7 @@ ul.social {
   display: inline-block;
   margin: 0 auto;
   z-index: 1000;
+  padding-top: 10px;
 }
 ul.social li {
   list-style-type: none;
@@ -426,6 +427,37 @@ div.header:after {
   content: "";
   display: table;
   clear: both;
+}
+a.logo {
+  display: block;
+  position: relative;
+  width: 85px;
+  height: 85px;
+  border: 10px solid #ffffff;
+  background-color: #000000;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+a.logo:hover {
+  background-color: #1abc9c;
+}
+a.logo img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+a.logo i {
+  position: relative;
+  display: block;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 40px;
+  top: 50%;
+  margin-top: -20px;
 }
 div.posts {
   padding-top: 95px;
@@ -966,8 +998,12 @@ div.footer ul li.link-icon a {
   min-height: 400px;
 }
 .real-header {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   background-color: #eee;
+}
+.real-header.p {
+  padding-top: 10px;
 }
 .login {
   -ms-box-sizing: border-box;

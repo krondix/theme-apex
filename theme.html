@@ -60,11 +60,16 @@
     {% else  %}
 
     <div class="row real-header">
-        <div class="span10 offset2 text-center">
+        <div class="span1 offset2">
+            <a class="logo" href="/">
+                <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
+            </a>
+        </div>
+        <div class="span9 ">
 
             <div class="title">
                 <h1>mailto: <a href="mailto:egor@krondix.com">egor@krondix.com</a></h1>
-                <p>Blog by Egor Azanov — integral life hacker, spiritual seeker, futurist, CEO of Whatmatters, poker player.</p>
+                <p class="lead">Blog by Egor Azanov — integral life hacker, spiritual seeker, futurist, CEO of Whatmatters, poker player.</p>
                 <ul class="social inline">
                     {% if site.twitter %}
                     <li>

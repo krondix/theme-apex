@@ -92,6 +92,7 @@ ul.social {
             margin: 0 5px 0 5px;
         }
     }
+    padding-top: 10px;
 }
 
 div.header {
@@ -226,6 +227,34 @@ div.header {
         }
     }
     .clearfix();
+}
+
+a.logo {
+    display: block;
+    position: relative;
+    width: 85px;
+    height: 85px;
+    border: 10px solid @white;
+    background-color: @black;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+    .rounded(50%);
+    &:hover {
+        background-color: @link;
+    }
+    img {
+        .rounded(50%);
+    }
+    i {
+        position: relative;
+        display: block;
+        color: @white;
+        font-size: 40px;
+        line-height: 40px;
+        top: 50%;
+        margin-top: -20px;
+    }
 }
 
 div.posts {
@@ -604,8 +633,13 @@ div.footer {
 }
 
 .real-header {
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom:20px;
     background-color: #eee;
+}
+
+.real-header.p {
+    padding-top:10px;
 }
 
 @import url(http://postach.io/static/themes/_assets/less/login.less);
