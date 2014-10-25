@@ -922,12 +922,13 @@ ul.social {
   display: inline-block;
   margin: 0 auto;
   z-index: 1000;
+  margin-top: 10px;
 }
 ul.social li {
   list-style-type: none;
   display: inline-block;
   padding-left: 0px;
-  padding-right: 5px;
+  padding-right: 0px;
 }
 ul.social li a {
   display: inline-block;
