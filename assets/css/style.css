@@ -372,7 +372,7 @@ div.header:after {
   clear: both;
 }
 div.posts {
-  padding-top: 95px;
+  padding-top: 30px;
 }
 div.post h2,
 div.post h3 {
@@ -976,6 +976,11 @@ a.logo i {
   line-height: 40px;
   top: 50%;
   margin-top: -20px;
+}
+.post-info > div > ul.inline > li {
+  margin-left: 0px;
+  padding-right: 10px;
+  padding-top: 0px;
 }
 .login {
   -ms-box-sizing: border-box;
