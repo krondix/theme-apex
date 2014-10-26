@@ -59,10 +59,17 @@
 
     {% else  %}
 
+    <div class="container-fluid">
+
     <div class="row real-header">
-        <div class="span11 offset1 ">
-            <div class="">
-                <div class="span10" >
+        <div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
+            <a class="logo" href="/">
+                <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
+            </a>
+        </div>
+
+        <div class="col-lg-9 col-md-10">
+
                     <h1>Egor Azanov <a href="egor@krondix.com">egor@krondix.com</a></h1>
                     <p class="lead">Integral life hacker, spiritual seeker, futurist. <br/>
                         CEO of <a href="http://what.ms">Whatmatters</a>, poker player and coach.</p>
@@ -110,7 +117,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+
             </div>
 
 
@@ -263,6 +270,6 @@
 
     <!-- bootstrap -->
     <script src="http://postach.io/static/themes/_assets/bootstrap/js/bootstrap.min.js"></script>
-    
+    </div>
   </body>
 </html>

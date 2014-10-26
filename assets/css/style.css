@@ -1,8 +1,7 @@
-@import url(http://postach.io/static/themes/_assets/bootstrap/css/bootstrap.min.css);
-@import url(http://postach.io/static/themes/_assets/bootstrap/css/bootstrap-responsive.min.css);
+@import url(http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic-ext);
 /*---------------------------------------------------
     LESS Elements 0.9.1
   ---------------------------------------------------
@@ -181,13 +180,21 @@ html {
 }
 body {
   line-height: 1.65;
-  font-family: 'Lora', serif;
+  font-family: 'Roboto Slab', serif;
   height: 100%;
   width: 100%;
 }
 ul,
 li {
   list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Sans', sans-serif;
 }
 ul,
 li,
