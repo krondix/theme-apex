@@ -62,13 +62,13 @@
 <div class="container-fluid">
 
     <div class="row real-header">
-        <div class="col-md-offset-1 col-lg-offset-1 col-sm-offset-0 col-sm-3 col-md-2 col-lg-2 hidden-xs">
+        <div class="col-sm-3 col-md-2 col-lg-2 hidden-xs">
             <a class="logo" href="/">
                 <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
             </a>
         </div>
 
-        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
 
             <h1>Egor Azanov <a href="egor@krondix.com">egor@krondix.com</a></h1>
             <p class="lead" >Integral life hacker, spiritual seeker, futurist. <br/>
@@ -149,17 +149,15 @@
     <div class="col-lg-offset-1 col-md-offset-1 col-lg-9 col-md-9 col-sm-12 col-xs-12">
 
         {% if is_tag %}
-        <h4 class="sub-heading span9">Posts about {{ tag|format_tag(False, False) }}. <a href="/">Read all posts</a>.</h4>
+        <h4 class="sub-heading">Posts about {{ tag|format_tag(False, False) }}. <a href="/">Read all posts</a>.</h4>
         {% endif %}
 
         {% if posts %}
         {% for post in posts %}
-        <div class="post span9">
-            <div class="row">
-                <div class="span9">
-                    <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-                </div>
-            </div>
+        <div class="post">
+
+            <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+
             <div class="post-info">
                 <div class="info-left">
                     <ul class="inline">
