@@ -968,7 +968,6 @@ a.logo {
   background-color: #ffffff;
   margin: 0 auto;
   text-align: center;
-  margin-right: 30px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1007,6 +1006,10 @@ ol > li {
 }
 div.post {
   margin-top: 30px;
+}
+.lead {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 .login {
   -ms-box-sizing: border-box;
