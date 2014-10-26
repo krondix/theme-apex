@@ -999,6 +999,9 @@ a.logo i {
 ol > li {
   list-style-type: decimal !important;
 }
+div.post {
+  margin-top: 30px;
+}
 .login {
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
