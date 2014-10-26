@@ -62,13 +62,13 @@
 <div class="container-fluid">
 
     <div class="row real-header">
-        <div class="col-sm-3 col-md-2 col-lg-2 hidden-xs">
-            <a class="logo" href="/">
-                <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
-            </a>
-        </div>
+        <!--<div class="col-sm-3 col-md-2 col-lg-2 hidden-xs">-->
+            <!--<a class="logo" href="/">-->
+                <!--<img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />-->
+            <!--</a>-->
+        <!--</div>-->
 
-        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-11 col-md-11 col-sm-11 col-xs-12">
 
             <h1>Egor Azanov <a href="egor@krondix.com">egor@krondix.com</a></h1>
             <p class="lead" >Integral life hacker, spiritual seeker, futurist. <br/>
@@ -183,24 +183,24 @@
         </div>
         {% endfor %}
         {% if not is_tag %}
-        <div class="pagination span8">
+        <div class="pagination">
             {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
             {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
         </div>
         {% endif %}
         {% else %}
-        <h4 class="sub-heading span8">No Posts Yet :(</h4>
+        <h4 class="sub-heading">No Posts Yet :(</h4>
         {% endif %}
     </div>
 
     {% elif post %}
 
-    <div class="span9 offset1 posts">
-        <div class="post whole span9">
+    <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-9 col-md-9 col-sm-11 col-xs-12 posts">
+
             <h1>{{ post.title }}</h1>
             <div class="post-info">
                 <div class="info-left">
-                    <ul class="inline">
+                    <ul class="list-inline">
                         <li>
                             <p class="date">{{ post.created_at|format_date }}</p>
                         </li>
@@ -241,13 +241,13 @@
                 </script>
             </div>
             {% endif %}
-        </div>
+
     </div>
 
     {% elif post.type == 'page' %}
 
-    <div class="span9 offset1 posts">
-        <div class="post whole span9">
+    <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-9 col-md-9 col-sm-11 col-xs-12 posts">
+
             <h1>{{ page.title }}</h1>
             <div class="post-body" data-type-cleanup="true">
                 {{ page.content }}
@@ -255,7 +255,7 @@
             <div class="post-footer">
                 <p class="back"><a href="/">&laquo; Go Back</a></p>
             </div>
-        </div>
+
     </div>
 
     {% endif %}
