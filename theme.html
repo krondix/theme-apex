@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>
-      {% if is_login %}Login
-      {% elif is_home %}{{ site.author }}
-      {% elif is_tag %}Posts about {{ tag }}
-      {% elif post %}{{ post.title }}
-      {% endif %}
-      | {{ site.name }}
+        {% if is_login %}Login
+        {% elif is_home %}{{ site.author }}
+        {% elif is_tag %}Posts about {{ tag }}
+        {% elif post %}{{ post.title }}
+        {% endif %}
+        | {{ site.name }}
     </title>
 
     {{ header_meta }}
@@ -17,7 +17,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <!--[if IE 7]>
-      <link href="http://postach.io/static/themes/_assets/fontawesome/css/font-awesome-ie7.min.css" rel="stylesheet">
+    <link href="http://postach.io/static/themes/_assets/fontawesome/css/font-awesome-ie7.min.css" rel="stylesheet">
     <![endif]-->
 
     <!--
@@ -39,27 +39,27 @@
     -->
 
     {% if site.analytics %}
-      <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-37507465-1', 'auto');
-          ga('send', 'pageview');
+        ga('create', 'UA-37507465-1', 'auto');
+        ga('send', 'pageview');
 
-      </script>
+    </script>
     {% endif %}
-  </head>
-  <body>
+</head>
+<body>
 
-    {% if is_login %}
+{% if is_login %}
 
-      {{ login_form }}
+{{ login_form }}
 
-    {% else  %}
+{% else  %}
 
-    <div class="container-fluid">
+<div class="container-fluid">
 
     <div class="row real-header">
         <div class="col-md-offset-1 col-lg-offset-1 col-md-3 col-lg-2">
@@ -70,206 +70,204 @@
 
         <div class="col-lg-9 col-md-10">
 
-                    <h1>Egor Azanov <a href="egor@krondix.com">egor@krondix.com</a></h1>
-                    <p class="lead">Integral life hacker, spiritual seeker, futurist. <br/>
-                        CEO of <a href="http://what.ms">Whatmatters</a>, poker player and coach.</p>
-                    <ul class="social inline">
-                        {% if site.twitter %}
-                        <li>
-                            <a href="{{ site.twitter }}" title="Twitter" target="_blank">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        {% endif %}
+            <h1>Egor Azanov <a href="egor@krondix.com">egor@krondix.com</a></h1>
+            <p class="lead">Integral life hacker, spiritual seeker, futurist. <br/>
+                CEO of <a href="http://what.ms">Whatmatters</a>, poker player and coach.</p>
+            <ul class="social inline">
+                {% if site.twitter %}
+                <li>
+                    <a href="{{ site.twitter }}" title="Twitter" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                {% endif %}
 
-                        {% if site.facebook %}
-                        <li>
-                            <a href="{{ site.facebook }}" title="Facebook" target="_blank">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        {% endif %}
+                {% if site.facebook %}
+                <li>
+                    <a href="{{ site.facebook }}" title="Facebook" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                {% endif %}
 
-                        {% if site.googleplus %}
-                        <li>
-                            <a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
-                                <i class="icon-google-plus"></i>
-                            </a>
-                        </li>
-                        {% endif %}
+                {% if site.googleplus %}
+                <li>
+                    <a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
+                        <i class="icon-google-plus"></i>
+                    </a>
+                </li>
+                {% endif %}
 
-                        <li>
-                            <a href="http://instagram.com/krondix?rel=author" title="Instagram" target="_blank">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </li>
+                <li>
+                    <a href="http://instagram.com/krondix?rel=author" title="Instagram" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
 
-                        {% if site.linkedin %}
-                        <li>
-                            <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        {% endif %}
-                        <li>
-                            <a href="{{ site.atom_url }}" title="RSS" target="_blank">
-                                <i class="fa fa-rss"></i>
-                            </a>
-                        </li>
-                    </ul>
+                {% if site.linkedin %}
+                <li>
+                    <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                {% endif %}
+                <li>
+                    <a href="{{ site.atom_url }}" title="RSS" target="_blank">
+                        <i class="fa fa-rss"></i>
+                    </a>
+                </li>
+            </ul>
 
-            </div>
-
-
-
-            <!--<a class="logo" href="/">-->
-                <!--<img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />-->
-            <!--</a>-->
-            <!--<div class="site-description">-->
-                <!--<ul>-->
-                    <!--<li><a href="/">Blog</a></li>-->
-                    <!--{% if pages %}-->
-                    <!--{% for page in pages %}-->
-                    <!--<li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>-->
-                    <!--{% endfor %}-->
-                    <!--{% endif %}-->
-                <!--</ul>-->
-            <!--</div>-->
         </div>
+
+
+
+        <!--<a class="logo" href="/">-->
+        <!--<img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />-->
+        <!--</a>-->
+        <!--<div class="site-description">-->
+        <!--<ul>-->
+        <!--<li><a href="/">Blog</a></li>-->
+        <!--{% if pages %}-->
+        <!--{% for page in pages %}-->
+        <!--<li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>-->
+        <!--{% endfor %}-->
+        <!--{% endif %}-->
+        <!--</ul>-->
+        <!--</div>-->
     </div>
+</div>
 
-    <div class="row">
-
-
-
+<div class="row">
 
 
-      {% if is_home or is_tag %}
 
-      <div class="span9 offset1 posts">
 
-          {% if is_tag %}
-          <h4 class="sub-heading span9">Posts about {{ tag|format_tag(False, False) }}. <a href="/">Read all posts</a>.</h4>
-          {% endif %}
 
-          {% if posts %}
-          {% for post in posts %}
-          <div class="post span9">
+    {% if is_home or is_tag %}
+
+    <div class="span9 offset1 posts">
+
+        {% if is_tag %}
+        <h4 class="sub-heading span9">Posts about {{ tag|format_tag(False, False) }}. <a href="/">Read all posts</a>.</h4>
+        {% endif %}
+
+        {% if posts %}
+        {% for post in posts %}
+        <div class="post span9">
             <div class="row">
-              <div class="span9">
-                <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-              </div>
+                <div class="span9">
+                    <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+                </div>
             </div>
-              <div class="post-info">
-                  <div class="info-left">
-                      <ul class="inline">
-                          <li>
-                              <p class="date">{{ post.created_at|format_date }}</p>
-                          </li>
-                          {% for tag in post.tags %}
-                            <li>
-                                <a href="/tag/{{tag}}" class="{{ set_active('/tag/' + tag) }}">{{ tag|format_tag(False, False) }}</a>
-                            </li>
-                          {% endfor %}
-                      </ul>
-                  </div>
-              </div>
+            <div class="post-info">
+                <div class="info-left">
+                    <ul class="inline">
+                        <li>
+                            <p class="date">{{ post.created_at|format_date }}</p>
+                        </li>
+                        {% for tag in post.tags %}
+                        <li>
+                            <a href="/tag/{{tag}}" class="{{ set_active('/tag/' + tag) }}">{{ tag|format_tag(False, False) }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
             <div class="post-body" data-type-cleanup="true">
-              {{ post.content }}
+                {{ post.content }}
             </div>
-              <div class="post-info" style="margin-top:20px">
-                  <div class="info-left">
-                      <p style="font-size:16px;"><a href="{{post.permalink}}">Please, leave a comment.</a> Your words are valuable.</p>
-                  </div>
-              </div>
-          </div>
-          {% endfor %}
-          {% if not is_tag %}
-          <div class="pagination span8">
+            <div class="post-info" style="margin-top:20px">
+                <div class="info-left">
+                    <p style="font-size:16px;"><a href="{{post.permalink}}">Please, leave a comment.</a> Your words are valuable.</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% if not is_tag %}
+        <div class="pagination span8">
             {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
             {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
-          </div>
-          {% endif %}
-          {% else %}
-          <h4 class="sub-heading span8">No Posts Yet :(</h4>
-          {% endif %}
-      </div>
-
-      {% elif post %}
-
-      <div class="span9 offset1 posts">
-        <div class="post whole span9">
-          <h1>{{ post.title }}</h1>
-          <div class="post-info">
-            <div class="info-left">
-                <ul class="inline">
-                    <li>
-                        <p class="date">{{ post.created_at|format_date }}</p>
-                    </li>
-                    {% for tag in post.tags %}
-                    <li>
-                        <a href="/tag/{{tag}}" class="{{ set_active('/tag/' + tag) }}">{{ tag|format_tag(False, False) }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-          </div>
-          <div class="post-body">
-            <div class="post-content" data-type-cleanup="true">
-              {{ post.content }}
-            </div>
-
-            {% if post.type == 'link' %}
-            <p><a href="{{ post.url }}"><i class="icon-share"></i> {{ post.url }}</a></p>
-            {% endif %}
-
-            {{ theme.social.bar }}
-
-          </div>
-          <div class="post-footer">
-            <p class="back"><a href="/">&laquo; Go Back</a></p>
-          </div>
-          {% if site.disqus %}
-          <div class="post-comments">
-            <div id="disqus_thread"></div>
-            <script>
-              var disqus_shortname = '{{ site.disqus }}';
-              var disqus_url = '{{site.base_url}}{{ post.permalink }}';
-              (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-            </script>
-          </div>
-          {% endif %}
         </div>
-      </div>
+        {% endif %}
+        {% else %}
+        <h4 class="sub-heading span8">No Posts Yet :(</h4>
+        {% endif %}
+    </div>
+
+    {% elif post %}
+
+    <div class="span9 offset1 posts">
+        <div class="post whole span9">
+            <h1>{{ post.title }}</h1>
+            <div class="post-info">
+                <div class="info-left">
+                    <ul class="inline">
+                        <li>
+                            <p class="date">{{ post.created_at|format_date }}</p>
+                        </li>
+                        {% for tag in post.tags %}
+                        <li>
+                            <a href="/tag/{{tag}}" class="{{ set_active('/tag/' + tag) }}">{{ tag|format_tag(False, False) }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="post-body">
+                <div class="post-content" data-type-cleanup="true">
+                    {{ post.content }}
+                </div>
+
+                {% if post.type == 'link' %}
+                <p><a href="{{ post.url }}"><i class="icon-share"></i> {{ post.url }}</a></p>
+                {% endif %}
+
+                {{ theme.social.bar }}
+
+            </div>
+            <div class="post-footer">
+                <p class="back"><a href="/">&laquo; Go Back</a></p>
+            </div>
+            {% if site.disqus %}
+            <div class="post-comments">
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_shortname = '{{ site.disqus }}';
+                    var disqus_url = '{{site.base_url}}{{ post.permalink }}';
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+            </div>
+            {% endif %}
+        </div>
+    </div>
 
     {% elif post.type == 'page' %}
 
-      <div class="span9 offset1 posts">
+    <div class="span9 offset1 posts">
         <div class="post whole span9">
-          <h1>{{ page.title }}</h1>
-          <div class="post-body" data-type-cleanup="true">
-            {{ page.content }}
-          </div>
-          <div class="post-footer">
-            <p class="back"><a href="/">&laquo; Go Back</a></p>
-          </div>
+            <h1>{{ page.title }}</h1>
+            <div class="post-body" data-type-cleanup="true">
+                {{ page.content }}
+            </div>
+            <div class="post-footer">
+                <p class="back"><a href="/">&laquo; Go Back</a></p>
+            </div>
         </div>
-      </div>
-
-    {% endif %}
-
     </div>
 
     {% endif %}
 
-    {{ footer_meta }}
+</div>
 
-    <!-- bootstrap -->
-    <script src="http://postach.io/static/themes/_assets/bootstrap/js/bootstrap.min.js"></script>
-    </div>
-  </body>
+{% endif %}
+
+{{ footer_meta }}
+
+</div>
+</body>
 </html>
